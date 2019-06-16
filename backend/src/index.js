@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 app.use(cors());
 
 app.use(
-  "/file",
+  "/files",
   express.static(path.resolve(__dirname, "..", "uploads", "resized"))
 );
 app.use(require("./routes"));
